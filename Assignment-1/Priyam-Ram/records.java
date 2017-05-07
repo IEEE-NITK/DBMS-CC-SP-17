@@ -5,12 +5,12 @@ public class records{
     public static void main(String []args){
         int lv=1;
         try{
-	        BufferedReader reader = new BufferedReader(new FileReader("/home/priyam/workspace/Records/src/data.csv"));
+	        BufferedReader reader = new BufferedReader(new FileReader("data.csv"));
 	        int totalStud = -1;
 	        while (reader.readLine() != null) totalStud++;
 	        reader.close();
         
-            File file = new File(("/home/priyam/workspace/Records/src/data.csv"));
+            File file = new File(("data.csv"));
 	        student [] record = new student[totalStud];
 	        Scanner inputStream = new Scanner(file);
 	        inputStream.nextLine();
