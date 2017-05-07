@@ -19,7 +19,7 @@ public class ReadCsv {
 		Phone = new long[100000];
 		
 		try{
-			CsvReader data = new CsvReader("D:\\hlpr9\\Java_Files\\Assingnment1\\src\\StudentRecorder\\Data_Real.csv");
+			CsvReader data = new CsvReader("src\\StudentRecorder\\Data_Real.csv");
 			data.readHeaders();
 			while(data.readRecord()){
 				Name.add(data.get("Name"));
