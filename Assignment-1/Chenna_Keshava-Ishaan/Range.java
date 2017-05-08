@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Range {
     public static void range() throws Exception{
-	String csvFile = "/home/chennakeshava/Desktop/assn_week1/data.csv";
+	String csvFile = "DBMS-CC-SP-17/Assignment-1/Chenna_Keshava-Ishaan/data.csv";
 	String line = "";
 	String csvSplitBy = ",";
 	Scanner in = new Scanner (System.in);
@@ -16,7 +16,7 @@ public class Range {
 	    System.out.println("Invalid Input. Roll numbers are not negative");
 	    return ;
 	}
-	
+
 	int max,min;
 
 	max = (a>b)?a:b;
@@ -25,7 +25,7 @@ public class Range {
 	System.out.println("Students present within the given roll numbers are");
 	int count = 0;
 	try(BufferedReader br = new BufferedReader(new FileReader(csvFile))){
-		
+
 	    line = br.readLine();
 	    line = br.readLine();
 	    while((line=br.readLine())!=null)
@@ -51,7 +51,7 @@ public class Range {
 	}
 
 	if(count==0) System.out.println("No students were found within the given range of roll numbers");
-	
+
 
     }
 }

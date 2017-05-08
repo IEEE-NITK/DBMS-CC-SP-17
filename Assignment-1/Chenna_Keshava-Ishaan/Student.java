@@ -4,21 +4,21 @@ import java.util.*;
 public class Student{
 
 
-    private String csvfile="/home/chennakeshava/Desktop/assn_week1/data.csv";
+    private String csvfile="DBMS-CC-SP-17/Assignment-1/Chenna_Keshava-Ishaan/data.csv";
     private String csvSplitBy=",";
     private String line = "";
-    
-    
-    
+
+
+
     public int searchString(String s,int i,int flag){
 	int count=0;
 	try(BufferedReader br = new BufferedReader( new FileReader(csvfile))){
 	    line = br.readLine();
 	    while((line=br.readLine())!=null){
-		
+
 		String[] comp = line.split(csvSplitBy);
-		
-		
+
+
 		if(comp[0].equals(s)&&i==-1||comp[1].equals(Integer.toString(i))&&s.equals(""))
 
 		{
@@ -29,16 +29,16 @@ public class Student{
 		    System.out.println("Contact : "+comp[4]);
 		    count++;
 		    if(flag==0) break;
-		    
+
 		}
-		
+
 	    }
 	    br.close();
 	}
 	catch(Exception e) {
 	    e.printStackTrace();
 		}
-	
+
     	return count;
     }
 
@@ -61,7 +61,7 @@ public class Student{
 		    System.out.println("Contact : "+ comp[4]);
 		    count++;
 		}
-	    
+
 	    }
 	    br.close();
 	}
@@ -71,7 +71,7 @@ public class Student{
 
 
     public static void main(String[] args) throws Exception{
-	
+
 	Scanner in = new Scanner(System.in);
 	Student stu = new Student();
 	Range pf = new Range();
@@ -80,8 +80,8 @@ public class Student{
 	do
 	{
 	    System.out.println("This program gives the details of students. Press the appropriate keys to search for students : \n 1.By Name\n 2.By Roll Number\n 3.Get All Students of a given Class\n 4.Get All Student Names which have Roll Number in given range\n 5.Exit Program\nChoose any option");
-	i = in.nextInt();	
-		   
+	i = in.nextInt();
+
 
 		  switch(i)
 		  {
@@ -103,7 +103,7 @@ public class Student{
 			break;
 
 		      case 3:
-			
+
 			System.out.println("Enter the class of the student");
 			String str = in.nextLine();
 			str = in.nextLine();
