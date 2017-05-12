@@ -13,7 +13,7 @@ public class JUnitTester {
 	}
 
 	@Test(timeout = 100) // Test for time of execution
-	public void SearchByNameIgnore() {
+	public void SearchByNameTest() {
 		
 		String expectedValue = new String();
 		expectedValue = "The Student is ....." + '\n' + "Name..." + "Willodean Tobar" + '\n' + "Roll Number..."+ "583430" + '\n' + "Class..." + "S1" + '\n' + "DOB..." + "27/05/1996" + '\n' + "Contact..."	+ "9444358575";
@@ -29,7 +29,7 @@ public class JUnitTester {
 	}
 
 	@Test(timeout = 100)
-	public void SearchByRollIgnore() {
+	public void SearchByRollTest() {
 		
 		String expectedValue2 = new String();
 		String actualValue2 = new String();
@@ -46,7 +46,7 @@ public class JUnitTester {
 	}
 
 	@Test(expected = NullPointerException.class)
-	public void SearchByRangeIgnore1() {
+	public void SearchByRangeTest1() {
 		String expectedValue3 = new String();
 		String actualValue3 = new String();
 
@@ -56,7 +56,7 @@ public class JUnitTester {
 	}
 
 	@Test(timeout = 100)
-	public void SearchByRangeIgnore2() {
+	public void SearchByRangeTest2() {
 		
 		String expectedValue3 = new String();
 		String actualValue3 = new String();
@@ -67,7 +67,7 @@ public class JUnitTester {
 	}
 
 	@Test(timeout = 100)
-	public void SearchByClass() {
+	public void SearchByClassTest() {
 		
 		String expectedValue4 = new String();
 		String actualValue4 = new String();
@@ -78,7 +78,7 @@ public class JUnitTester {
 	}
 
 	@Test(timeout = 100)
-	public void SorterIgnore() {
+	public void SorterTest() {
 		// Test for correct sorting of the Roll No in the record within the expected time.
 		SortRoll.toSort = new String[12];
 		String[] ToBeSorted = { "16CO115", "16CH007", "16CV104", "16EC110", "16IT249", "16EC109", "16CO251", "16CH026","16EE119", "16CO212", "16EE121", "16CV139" };
