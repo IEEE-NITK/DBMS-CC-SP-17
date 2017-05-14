@@ -16,11 +16,12 @@ public class studentRecordTestDrive {
 	String contact;
 	int v=0;
 	private static Scanner sc;
+	public static ArrayList<studentRecordTestDrive> student = null;
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		ArrayList<studentRecordTestDrive> student = new ArrayList<studentRecordTestDrive>();
+		student = new ArrayList<studentRecordTestDrive>();
 
-		String csvFile = "D:/data.csv";
+		String csvFile = "data.csv";
 		String line = "";
 		String csvSeparator = ",";
 
@@ -99,9 +100,7 @@ public class studentRecordTestDrive {
 			
 			for (int i = 1; i < x; i++){
 				m = student.get(i).search(student.get(i).Class, classToSearch);
-				if (m.v == 1) {
-					break;
-				}
+				
 			}
 			if (m.v == 0)
 				System.out.println("Not found");
