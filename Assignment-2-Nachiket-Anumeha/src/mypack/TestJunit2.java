@@ -30,7 +30,7 @@ public class TestJunit2 {
 	
 	@BeforeClass
 	public static void beforeTest() throws Exception{
-		csvLocation="/home/nac/workspace/Record/data.csv";
+		csvLocation="data.csv";
 		
 		CSVReader reader = new CSVReader(new FileReader(csvLocation));
        

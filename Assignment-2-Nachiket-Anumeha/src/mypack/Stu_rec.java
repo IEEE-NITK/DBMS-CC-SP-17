@@ -58,7 +58,7 @@ public class Stu_rec {
 		}
 	}
 	public static void main(String args[]) throws Exception{
-		String csvLocation="/home/nac/workspace/Record/data.csv";
+		String csvLocation="data.csv";
 	
 		CSVReader reader = new CSVReader(new FileReader(csvLocation));	
 		
