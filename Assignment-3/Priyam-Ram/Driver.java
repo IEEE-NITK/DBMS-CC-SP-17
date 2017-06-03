@@ -9,7 +9,7 @@ public class Driver {
 		
 		try{
 			// 1. Creating a connection to database
-			Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Survivors?useSSL=false", "root", "ilikeapples!");
+			Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Survivors?useSSL=false", "root", "");
 			
 			// 2. Creating a statement
 			Statement myStmt = myConn.createStatement();
